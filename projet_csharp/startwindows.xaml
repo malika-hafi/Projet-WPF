@@ -1,0 +1,188 @@
+﻿<Window x:Class="projet_csharp.startwindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projet_csharp" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="startwindows" Height="623.29" Width="1329.727"
+        WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="image1" UriSource="/Assets/professor.jpg"/>
+            <BitmapImage x:Key="image2" UriSource="/Assets/class.jpg"/>
+
+            <BitmapImage x:Key="image3" UriSource="/Assets/graduate.jpg"/>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid  Margin="0,0,0,579" Background="#FF01A3FF" RenderTransformOrigin="0.501,0.39">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="349*"/>
+                <ColumnDefinition Width="713*"/>
+            </Grid.ColumnDefinitions>
+            <ProgressBar
+  IsIndeterminate="True" Grid.ColumnSpan="2" Margin="0,8,0,9" Foreground="#FF01A3FF" Background="White" BorderBrush="White" />
+        </Grid>
+        <Grid Margin="0,0,1278,0" Background="#FF01A3FF">
+            <ProgressBar
+  Orientation="Vertical"
+  Height="5"
+  IsIndeterminate="True" Foreground="#FF01A3FF" Background="White" BorderBrush="White"/>
+        </Grid>
+        <!--images-->
+        <Image
+            Source="{StaticResource image1}" Margin="647,36,10,10" Stretch="Fill">
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+
+                            <!--fadeout-->
+                            <DoubleAnimation 
+                                Storyboard.TargetProperty="Opacity"
+                                SpeedRatio=".5"
+                                From="1"
+                                To=".5"
+                                RepeatBehavior="Forever"/>
+
+                            <!--fadeout-->
+                            <DoubleAnimation
+                                Storyboard.TargetProperty="Opacity"
+                                SpeedRatio=".5"
+                                From=".5"
+                                To="1"
+                                RepeatBehavior="Forever"
+                                />
+                            <ObjectAnimationUsingKeyFrames
+                                Storyboard.TargetProperty="Source"
+                                Duration="0:0:6"
+                                RepeatBehavior="Forever">
+                                <DiscreteObjectKeyFrame  Value="{StaticResource image2}"
+                                                         KeyTime="0:0:2"/>
+                                <DiscreteObjectKeyFrame  Value="{StaticResource image3}"
+                                                         KeyTime="0:0:4"/>
+
+
+                            </ObjectAnimationUsingKeyFrames>
+
+
+
+                        </Storyboard>
+                    </BeginStoryboard>
+
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+        <!--content-->
+        <Grid Margin="74,64,706,28">
+            <!--titre-->
+            <TextBlock
+            VerticalAlignment="Center"
+            Margin="92,19,198,466"
+            FontSize="30">
+            <Run Text="Gestion" FontWeight="Bold" FontFamily="fonts/#Dosis"/>
+            <Run Text="D'absenCe" FontWeight="Bold" FontFamily="fonts/#Dosis" Foreground="#FF01A3FF" Background="#FFE4E4E4"
+            />
+            </TextBlock>
+            <!--logo ensa-->
+            <Image Source="Assets/logo ensa.jpg" Margin="23,13,454,452"/>
+            <!--description-->
+            <TextBlock Height="50"
+                       Text="BienVenue"
+                       Foreground="Black"
+                       FontSize="25"
+                       FontWeight="Medium"
+                       FontFamily="Oswald SemiBold" Margin="4,118,386,355"/>
+            <TextBlock Height="50"
+                       Text="AppliCation"
+                       Foreground="Black"
+                       FontSize="25"
+                       FontWeight="Medium"
+                       FontFamily="Oswald SemiBold" Margin="8,211,361,262"/>
+            <TextBlock Height="50"
+                       Text="Dans notre"
+                       Foreground="#FF01A3FF"
+                       FontSize="25"
+                       FontWeight="Medium"
+                       FontFamily="Oswald SemiBold" Margin="6,163,330,310"/>
+            <TextBlock Height="100" Margin="8,266,80,157"
+                       Text="Lorem Ipsum est simplement un texte factice de l'industrie de l'impression et de la composition. Lorem Ipsum est le texte factice standard de l'industrie depuis les années 1500, quand un imprimeur inconnu a pris une galère de caractères et l'a brouillée pour en faire un livre de spécimens. Il a survécu non seulement cinq siècles, mais aussi le saut dans la composition électronique, demeurant essentiellement inchangé. "
+                       FontSize="12"
+                       FontWeight="Medium"
+                       Foreground="#FF3C4242" Background="Transparent"
+                       FontFamily="fonts/#Dosis"
+                       TextWrapping="Wrap"/>
+            <!--boutton-->
+            <StackPanel Orientation="Horizontal" Margin="82,371,198,109">
+                <Button x:Name="btn_demarrer" Content="Demarrer"
+                        Foreground="white"
+                        FontSize="14"
+                        FontWeight="Medium" Width="131" Margin="0,-16,0,-14" Click="to_login" >
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="TextElement.FontFamily" Value="fonts/#Dosis" />
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter Property="Background" Value="#FF01A3FF"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FFE4E4E4"/>
+                                    <Setter Property="Background" Value="black"/>
+
+                                </Trigger>
+                            </Style.Triggers>
+
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="96" Height="25"
+                                    CornerRadius="12" Background="{TemplateBinding Background}" Margin="0,10">
+                                <ContentPresenter VerticalAlignment="center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="btn_insc" Content="S'inscrire"
+                        Foreground="white"
+                        FontSize="14"
+                        FontWeight="Medium" Width="131" Margin="0,-16,0,-14" Click="to_register" >
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="TextElement.FontFamily" Value="fonts/#Dosis" />
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Setter Property="Background" Value="#FF01A3FF"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="black"/>
+                                    
+                                 
+                                </Trigger>
+                            </Style.Triggers>
+
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="96" Height="25"
+                                    CornerRadius="12" Background="{TemplateBinding Background}" Margin="0,10">
+                                <ContentPresenter VerticalAlignment="center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+
+            </StackPanel>
+
+
+
+        </Grid>
+
+    </Grid>
+</Window>

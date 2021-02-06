@@ -1,0 +1,88 @@
+﻿<Page x:Class="projet_csharp.Affectation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:projet_csharp"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        Background="White" Width="569.767" Height="695.747"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Affectation">
+
+    <Grid>
+        <TextBlock
+            VerticalAlignment="Center"
+            Margin="67,0,251,658"
+            FontSize="30"><Run Text="Affecter" FontWeight="Bold" FontFamily="fonts/#Dosis"/><Run Text=" "/><Run Text="Absence" 
+                                          FontWeight="Bold" FontFamily="fonts/#Dosis" Foreground="#FF01A3FF" Background="#FFE4E4E4"
+            /></TextBlock>
+        <!--icone-->
+        <Grid>
+            <materialDesign:PackIcon Kind="AccountMultiplePlus" HorizontalAlignment="Left" Margin="14,-2,0,0" VerticalAlignment="Top" Height="48" Width="44" Foreground="#FF01A3FF"/>
+            <Grid Margin="10,49,10,642" Background="#FF01A3FF">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="343*"/>
+                    <ColumnDefinition Width="208*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+        </Grid>
+        <Label Content="Absence justifié ? " HorizontalAlignment="Left" Margin="14,105,0,0" VerticalAlignment="Top" Height="29" Width="154" FontSize="15" Foreground="Black" FontWeight="ExtraBold"/>
+
+        <Grid Margin="14,139,39,508">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="31*"/>
+                <ColumnDefinition Width="94*"/>
+                <ColumnDefinition Width="77*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.ColumnSpan="3" Margin="2,-14,0,0">
+                <ComboBox Name="isJustifie">
+                    <ComboBoxItem>Oui</ComboBoxItem>
+                    <ComboBoxItem>Non</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+        </Grid>
+
+        <!--justification-->
+        <Label Content="Justification:" HorizontalAlignment="Left" Margin="14,188,0,0" VerticalAlignment="Top" Height="29" Width="154" FontSize="15" Foreground="Black" FontWeight="ExtraBold"/>
+        <Grid Margin="14,222,39,425">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="31*"/>
+                <ColumnDefinition Width="94*"/>
+                <ColumnDefinition Width="77*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.ColumnSpan="3" Margin="2,-14,0,0">
+                <TextBox x:Name="justification"
+  materialDesign:HintAssist.Hint="tapez la justification" FontSize="15"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Height="92" Foreground="Gray" />
+            </StackPanel>
+        </Grid>
+
+
+
+        <!--boutton-->
+        <Grid
+  Width="124" Margin="106,468,340,177">
+            <Button  Click="button1_Click"
+    Style="{StaticResource MaterialDesignRaisedButton}"
+    materialDesign:ButtonProgressAssist.Value="-1"
+    materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+    materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+    Content="Valider"
+    Margin="4,10,0,9" Background="#FF01A3FF" BorderBrush="#FF01A3FF" OpacityMask="#FF01A3FF" />
+        </Grid>
+        <!--boutton anuller-->
+        <Grid
+  Width="124" Margin="341,468,105,177">
+            <Button
+    Style="{StaticResource MaterialDesignRaisedButton}"
+    materialDesign:ButtonProgressAssist.Value="-1"
+    materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+    materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+    Content="Annuler"
+    Margin="-6,9,10,10" Background="#FF01A3FF" BorderBrush="#FF01A3FF" OpacityMask="#FF01A3FF" RenderTransformOrigin="0.779,-3.045" Click="Button_Click" />
+        </Grid>
+
+    </Grid>
+</Page>

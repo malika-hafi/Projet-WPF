@@ -1,0 +1,526 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:projet_csharp"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="projet_csharp.gestion_filiere"
+      mc:Ignorable="d"
+      Title="gestion_filiere" Width="1619.272" Height="999.699">
+
+    <Page.Resources>
+        <Style x:Key="MenuButtonStyle" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Background" Value="WhiteSmoke"/>
+            <Setter Property="Foreground" Value="Gray"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Margin" Value="20,7,-1,7"/>
+            <Setter Property="Template" >
+                <Setter.Value>
+                    <ControlTemplate  TargetType="{x:Type ToggleButton}">
+                        <Border CornerRadius="15,5,5,15"
+                                 Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="45"/>
+                                    <!--icon-->
+                                    <ColumnDefinition/>
+                                    <!--content-->
+                                </Grid.ColumnDefinitions>
+                                <Path  Fill="{TemplateBinding Foreground}"
+                                        Data="{TemplateBinding Tag}" Style="{StaticResource {x:Type Path}}"/>
+                                <ContentPresenter
+                                                     Grid.Column="1"
+                                        TextBlock.TextAlignment="Left"
+                                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                    Content="{TemplateBinding Content}"/>
+
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Background" Value="Silver"/>
+                                <Setter Property="Foreground" Value="Teal"/>
+                                <Setter Property="FontWeight" Value="SemiBold"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+
+    </Page.Resources>
+   
+    <Grid>
+        <Border Background="WhiteSmoke" CornerRadius="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <!--left panel-->
+                    <ColumnDefinition Width="300"/>
+                    <!--main content-->
+                    <ColumnDefinition />
+
+                </Grid.ColumnDefinitions>
+                <Grid Grid.RowSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="130"/>
+                        <RowDefinition Height="Auto"/>
+
+
+                    </Grid.RowDefinitions>
+                    <!--logo-->
+                    <TextBlock FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" > <Run Text="Gestion" FontFamily="fonts/#Dosis"/>
+            <Run Text="D'absenCe"
+             FontWeight="Bold"  FontFamily="fonts/#Dosis" Foreground="#FF01A3ff"></Run></TextBlock>
+
+                    <ProgressBar
+  IsIndeterminate="True" Margin="-10,127,10,0" Grid.Row="1" Foreground="#FF01A3FF" Background="White" BorderBrush="White" />
+                    <!--profile-->
+                    <StackPanel
+                    Grid.Row="1" Width="200" VerticalAlignment="Center">
+                        <Button x:Name="nom_btn" Content="Hafi Malika" Grid.Row="1" Foreground="Black" Background="White" Initialized="nom_btn_Initialized" >
+                            <Button.Style >
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter  Property="Height" Value="50"/>
+                                    <Setter  Property="Background" Value="LightGray"/>
+                                    <Setter  Property="Foreground" Value="Gray"/>
+                                    <Setter  Property="FontWeight" Value="SemiBold"/>
+                                    <Setter  Property="Template" >
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border CornerRadius="25"
+                                                Background="{TemplateBinding Background}"
+                                                BorderThickness="{TemplateBinding BorderThickness}">
+                                                    <Grid>
+                                                        <Ellipse HorizontalAlignment="left"  Height="45" Width="45"   Stretch="UniformToFill" Stroke="White" StrokeThickness="2" Margin="2,0">
+                                                            <Ellipse.Fill>
+                                                                <ImageBrush ImageSource="Assets/avatar.jpg "/>
+                                                            </Ellipse.Fill>
+                                                        </Ellipse>
+                                                        <ContentPresenter
+                                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                    Content="{TemplateBinding Content}"/>
+                                                    </Grid>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+
+                        </Button>
+                        <Grid Width="110" HorizontalAlignment="Left" Margin="0,10">
+                            <TextBlock   
+                     Text="Déconnexion -->"  FontWeight="Bold" Foreground="#FF01A3FF" VerticalAlignment="Center"><InlineUIContainer>
+                                <Path Data="{StaticResource right}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                            </InlineUIContainer></TextBlock>
+                        </Grid>
+                    </StackPanel>
+                    <ProgressBar
+  IsIndeterminate="True" Margin="0,97,0,0" Foreground="#FF01A3FF" Background="White" BorderBrush="White"/>
+                    <!--menu-->
+                    <StackPanel   Grid.Row="2" Margin="0,10 ">
+
+                        <RadioButton x:Name="acceuil_prof" GroupName="menu"  Style="{StaticResource MenuButtonStyle}"
+                           Background="Transparent" Tag="{StaticResource home}" Content="Accueil" Foreground="Black" Checked="acceuil_prof_Checked" />
+                        <RadioButton x:Name="statiqtique" GroupName="menu" Style="{StaticResource MenuButtonStyle}" 
+                            Tag="{StaticResource statistics}" Content="Statistique" Checked="statiqtique_Checked"  />
+                        <RadioButton x:Name="gestion_etudiant"  GroupName="menu" Style="{StaticResource MenuButtonStyle}" 
+                            Tag="{StaticResource sharedfolders}" Content="Gestion des étudiants" Checked="gestion_etudiant_Checked"  />
+                        <RadioButton x:Name="filiere" GroupName="menu"  Style="{StaticResource MenuButtonStyle}"
+                       Foreground="white"   Background="#FF01A3FF"  Tag="{StaticResource folder}" Content="Gestion des filiéres" />
+                        <RadioButton x:Name="gestion_absence" GroupName="menu"  Style="{StaticResource MenuButtonStyle}" 
+                            Tag="{StaticResource documentfile}" Content="Gestion des absences" Checked="gestion_absence_Checked"/>
+                    </StackPanel>
+
+                </Grid>
+
+                <!--main content-->
+                <Grid Grid.Column="1" Background="White" Grid.RowSpan="2" Margin="0,-2,10,12" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <!--search-->
+                    <Grid    Height="47" Margin="16,0,17,0" VerticalAlignment="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition  />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    <StackPanel Grid.Row="1" Margin="40,0" Orientation="Vertical">
+
+                        <Grid/>
+                    </StackPanel>
+                    <materialDesign:ColorZone Content="gestion de filière" 
+                                          HorizontalContentAlignment="Center"
+                                          Padding="10" 
+                                          FontFamily="Arial"
+                                          HorizontalAlignment="Left" 
+                                          Margin="3,3,0,0"
+                                          VerticalAlignment="Top"
+                                          FontSize="20"
+                                          Height="45"
+                                          Width="1306" Background="#FF01A3FF" Foreground="White" Grid.RowSpan="2"/>
+                    <!--card it-->
+                    <materialDesign:Card Margin="16,44,1014,572" Grid.RowSpan="1" Grid.Row="1">
+                        <Grid Margin="0,6,0,-6">
+                            <Grid.RowDefinitions>
+                                <RowDefinition
+        Height="140" />
+                                <RowDefinition
+        Height="*" />
+                                <RowDefinition
+        Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Image
+      Source="Assets/IT.jpg"
+      Height="140" Margin="10,0,8,0" Stretch="Fill" />
+                            <StackPanel
+      Grid.Row="1"
+      Margin="8 24 8 0">
+                                <TextBlock
+        FontWeight="Bold" Margin="2,0,-2,0"><Run Text="génie informatique"/></TextBlock>
+                                <TextBlock
+        TextWrapping="Wrap"
+        VerticalAlignment="Center" Height="132"><Run Text="'ingénieur Génie Informatique de l'ENSA est capable d'exercer une grande variété de métiers dans pratiquement tous les secteurs de l'économie. Il possède les compétences techniques nécessaires alliées à de bonnes aptitudes relationnelles et à une sensibilisation aux organisations et au fonctionnement des entreprises"/></TextBlock>
+                            </StackPanel>
+                            <StackPanel
+      HorizontalAlignment="Right"
+      Grid.Row="1"
+      Orientation="Horizontal"
+      Margin="0,24,8,8" Width="254" Grid.RowSpan="2">
+                                <Button
+        Style="{StaticResource MaterialDesignToolButton}"
+        Width="30"
+        Padding="2 0 2 0"
+        materialDesign:RippleAssist.IsCentered="True"/>
+                            </StackPanel>
+                        </Grid>
+                    </materialDesign:Card>
+                    <!--filiere texte-->
+                    <Label Content="Filieres" HorizontalAlignment="Left" Margin="16,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104" FontSize="15" Foreground="Gray" FontWeight="Bold"/>
+                    <!--progressbar filieres-->
+                    <ProgressBar HorizontalAlignment="Left" Height="5" Margin="80,23,0,0" Grid.Row="1" VerticalAlignment="Top" Width="1226" RenderTransformOrigin="0.5,0.5" Background="#FF01A3FF">
+                        <ProgressBar.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleY="-1"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </ProgressBar.RenderTransform>
+                    </ProgressBar>
+                    <!--card genie indus-->
+                    <materialDesign:Card Margin="343,50,677,572" Grid.RowSpan="1" Grid.Row="1" Width="289">
+                        <Grid Margin="-10,0,10,0" Width="271">
+                            <Grid.RowDefinitions>
+                                <RowDefinition
+                                Height="140" />
+                                <RowDefinition
+                                Height="*" />
+                                <RowDefinition
+                                Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Image
+                            Source="Assets/indus.jpg"
+                            Height="140" Margin="-2,0,-8,0" Stretch="Fill" />
+                            <StackPanel
+                            Grid.Row="1"
+                            Margin="8 24 8 0">
+                                <TextBlock
+                                FontWeight="Bold" Margin="2,0,-2,0"><Run Text="génie industrièle"/></TextBlock>
+                                <TextBlock
+                                TextWrapping="Wrap"
+                                VerticalAlignment="Center" Height="148"><Run Text="Le Génie Industriel englobe la conception, l'amélioration et l'installation des systèmes de production intégrant les aspects organisationnels et humains dans l'objectif de mieux produire"/></TextBlock>
+                            </StackPanel>
+                            <StackPanel
+                            HorizontalAlignment="Right"
+                            Grid.Row="1"
+                            Orientation="Horizontal"
+                            Margin="0,24,8,8" Width="254" Grid.RowSpan="2">
+                                <Button
+                                Style="{StaticResource MaterialDesignToolButton}"
+                                Width="30"
+                                Padding="2 0 2 0"
+                                materialDesign:RippleAssist.IsCentered="True"/>
+                            </StackPanel>
+                        </Grid>
+                    </materialDesign:Card>
+                    <!--card reseau-->
+                    <materialDesign:Card Margin="674,50,346,572" Grid.RowSpan="1" Grid.Row="1" Width="289">
+                        <Grid Margin="-8,0,8,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition
+                                Height="140" />
+                                <RowDefinition
+                                Height="*" />
+                                <RowDefinition
+                                Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Image
+                            Source="Assets/reseau.jpg"
+                            Height="140" Margin="10,0,0,0" Stretch="Fill" />
+                            <StackPanel
+                            Grid.Row="1"
+                            Margin="8 24 8 0">
+                                <TextBlock
+                                FontWeight="Bold" Margin="2,0,-2,0"><Run Text="Génie Télécommunications "/><LineBreak/><Run Text="et Réseaux"/></TextBlock>
+                                <TextBlock
+                                TextWrapping="Wrap"
+                                VerticalAlignment="Center" Height="146"><Run Text="Le Génie Industriel englobe la conception, l'amélioration et l'installation des systèmes de production intégrant les aspects organisationnels et humains dans l'objectif de mieux produire"/></TextBlock>
+                            </StackPanel>
+                            <StackPanel
+                            HorizontalAlignment="Right"
+                            Grid.Row="1"
+                            Orientation="Horizontal"
+                            Margin="0,24,8,8" Width="254" Grid.RowSpan="2">
+                                <Button
+                                Style="{StaticResource MaterialDesignToolButton}"
+                                Width="30"
+                                Padding="2 0 2 0"
+                                materialDesign:RippleAssist.IsCentered="True"/>
+                            </StackPanel>
+                        </Grid>
+                    </materialDesign:Card>
+                    <materialDesign:Card Margin="1007,50,13,572" Grid.RowSpan="1" Grid.Row="1" Width="289">
+                        <Grid Margin="-8,0,8,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition
+                                Height="140" />
+                                <RowDefinition
+                                Height="*" />
+                                <RowDefinition
+                                Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Image
+                            Source="Assets/gpmc.jpg"
+                            Height="140" Margin="10,0,0,0" Stretch="Fill" />
+                            <StackPanel
+                            Grid.Row="1"
+                            Margin="8 24 8 0">
+                                <TextBlock
+                                FontWeight="Bold" Margin="2,0,-2,0"><Run Text="Génie Procédés et Matériaux Céramiques "/></TextBlock>
+                                <TextBlock
+                                TextWrapping="Wrap"
+                                VerticalAlignment="Center" Height="146"><Run Text="Le Génie Industriel englobe la conception, l'amélioration et l'installation des systèmes de production intégrant les aspects organisationnels et humains dans l'objectif de mieux produire"/></TextBlock>
+                            </StackPanel>
+                            <StackPanel
+                            HorizontalAlignment="Right"
+                            Grid.Row="1"
+                            Orientation="Horizontal"
+                            Margin="0,24,8,8" Width="254" Grid.RowSpan="2">
+                                <Button
+                                Style="{StaticResource MaterialDesignToolButton}"
+                                Width="30"
+                                Padding="2 0 2 0"
+                                materialDesign:RippleAssist.IsCentered="True"/>
+                            </StackPanel>
+                        </Grid>
+                    </materialDesign:Card>
+                    <!--cordonateur-->
+                    <Label Content="cordonnateur des filières" HorizontalAlignment="Left" Margin="23,570,0,0" Grid.Row="1" VerticalAlignment="Top" Width="190" FontSize="15" Foreground="Gray" FontWeight="Bold"/>
+                    <ProgressBar HorizontalAlignment="Left" Height="5" Margin="228,585,0,0" Grid.Row="1" VerticalAlignment="Top" Width="1074" RenderTransformOrigin="0.5,0.5" Background="#FF01A3FF">
+                        <ProgressBar.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleY="-1"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </ProgressBar.RenderTransform>
+                    </ProgressBar>
+                    <Grid Margin="40,469,1055,220" Grid.Row="1"/>
+                    <!--cordonateur-->
+                    <Image HorizontalAlignment="Left" Height="97" Margin="10,619,0,0" Grid.Row="1" VerticalAlignment="Top" Width="95" Source="Assets/chadi.jpg"/>
+                    <Label Content="Génie informatique" HorizontalAlignment="Left" Margin="109,620,0,0" Grid.Row="1" VerticalAlignment="Top" Width="174" FontSize="15" Foreground="Black" FontWeight="UltraBlack"/>
+                    <Label Content="M. Said ECH-CHADI" HorizontalAlignment="Left" Margin="113,667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="172" FontSize="15" Foreground="Gray" />
+                    <Label Content="Email: s.echchadi@uca.ma" HorizontalAlignment="Left" Margin="99,696,0,0" Grid.Row="1" VerticalAlignment="Top" Width="206" FontSize="15" Foreground="#FF01A3FF" />
+                    <Label Content="nombre d'etudiant dans chaque filière" HorizontalAlignment="Left" Margin="21,400,0,0" Grid.Row="1" VerticalAlignment="Top" Width="284" FontSize="15" Foreground="Gray" FontWeight="Bold"/>
+                    <ProgressBar HorizontalAlignment="Left" Height="5" Margin="310,417,0,0" Grid.Row="1" VerticalAlignment="Top" Width="976" RenderTransformOrigin="0.5,0.5" Background="#FF01A3FF">
+                        <ProgressBar.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleY="-1"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </ProgressBar.RenderTransform>
+                    </ProgressBar>
+                    <Image HorizontalAlignment="Left" Height="97" Margin="322,619,0,0" Grid.Row="1" VerticalAlignment="Top" Width="95" Source="Assets/chadi.jpg"/>
+                    <Label Content="Génie industriel
+                       " HorizontalAlignment="Left" Margin="438,620,0,0" Grid.Row="1" VerticalAlignment="Top" Width="174" FontSize="15" Foreground="Black" FontWeight="UltraBlack"/>
+                    <Label Content="M. MESNAOUI Brahim" HorizontalAlignment="Left" Margin="438,662,0,0" Grid.Row="1" VerticalAlignment="Top" Width="172" FontSize="15" Foreground="Gray" />
+                    <Label Content="Email: b.mesnaoui@uca.ma" HorizontalAlignment="Left" Margin="422,692,0,0" Grid.Row="1" VerticalAlignment="Top" Width="206" FontSize="15" Foreground="#FF01A3FF" />
+                    <Image HorizontalAlignment="Left" Height="97" Margin="654,621,0,0" Grid.Row="1" VerticalAlignment="Top" Width="95" Source="Assets/ziyan.jpg" RenderTransformOrigin="0.611,0.186"/>
+                    <Label Content="Génie Télécommunications et Réseaux" HorizontalAlignment="Left" Margin="766,613,0,0" Grid.Row="1" VerticalAlignment="Top" Width="206" FontSize="15" Foreground="Black" FontWeight="UltraBlack" Height="56"/>
+                    <Label Content="M. MESNAOUI Brahim" HorizontalAlignment="Left" Margin="775,660,0,0" Grid.Row="1" VerticalAlignment="Top" Width="172" FontSize="15" Foreground="Gray" />
+                    <Label Content="Email: a.zyane@uca.ma" HorizontalAlignment="Left" Margin="757,691,0,0" Grid.Row="1" VerticalAlignment="Top" Width="206" FontSize="15" Foreground="#FF01A3FF" />
+                    <Image HorizontalAlignment="Left" Height="97" Margin="972,634,0,0" Grid.Row="1" VerticalAlignment="Top" Width="95" Source="Assets/ziyan.jpg"/>
+                    <Label Content="Génie Procédés et Matériaux Céramiques" HorizontalAlignment="Left" Margin="1063,613,0,0" Grid.Row="1" VerticalAlignment="Top" Width="220" FontSize="15" Foreground="Black" FontWeight="UltraBlack" Height="55"/>
+                    <Label Content="M. NIBOU Lahbib" HorizontalAlignment="Left" Margin="1072,670,0,0" Grid.Row="1" VerticalAlignment="Top" Width="172" FontSize="15" Foreground="Gray" />
+                    <Label Content="Email: l.nibou@uca.ma" HorizontalAlignment="Left" Margin="1077,695,0,0" Grid.Row="1" VerticalAlignment="Top" Width="206" FontSize="15" Foreground="#FF01A3FF" />
+
+                </Grid>
+                <materialDesign:Card
+  Background="{DynamicResource PrimaryHueDarkBrush}"
+  Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+  Width="200"
+  Padding="8">
+                    <StackPanel>
+                        <TextBlock
+      Margin="16 16 12 8"
+      FontSize="16">
+    Notes
+                        </TextBlock>
+                        <CheckBox
+      Margin="16 4 16 0"
+      Style="{StaticResource MaterialDesignUserForegroundCheckBox}">
+                            Do something good
+                        </CheckBox>
+                        <CheckBox
+      Margin="16 4 16 0"
+      Style="{StaticResource MaterialDesignUserForegroundCheckBox}">
+                            Take a breather
+                        </CheckBox>
+                        <CheckBox
+      Margin="16 4 16 0"
+      Style="{StaticResource MaterialDesignUserForegroundCheckBox}">
+                            And go create
+                        </CheckBox>
+                        <RadioButton
+      Margin="16 4 16 0"
+      Style="{DynamicResource MaterialDesignUserForegroundRadioButton}">
+                            This?
+                        </RadioButton>
+                        <RadioButton
+      Margin="16 4 16 0"
+      Style="{DynamicResource MaterialDesignUserForegroundRadioButton}">
+                            Or This?
+                        </RadioButton>
+                        <Separator
+      Style="{StaticResource MaterialDesignLightSeparator}" />
+                        <StackPanel
+      Margin="8 0 8 8"
+      Orientation="Horizontal"
+      HorizontalAlignment="Right">
+                            <Button
+        HorizontalAlignment="Right"
+        Style="{StaticResource MaterialDesignToolForegroundButton}"
+        Width="30"
+        Padding="2 0 0 0"
+        materialDesign:RippleAssist.IsCentered="True">
+                                <materialDesign:PackIcon
+          Kind="CheckAll" />
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                </materialDesign:Card>
+                <!--nombre d'eleve par filiere-->
+                <Grid Grid.Column="1" Margin="34,484,107,396" Grid.RowSpan="2">
+                    <materialDesign:Card
+  Background="#FF89868F"
+  Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+  Padding="8" Margin="0,-2,992,2">
+                        <StackPanel Margin="0,0,0,-6">
+                            <TextBlock
+      Margin="16 16 12 8" FontWeight="Bold"
+      FontSize="16" Height="19"><Run Text="GINF"/><LineBreak/><Run/></TextBlock>
+                            <TextBlock
+      Margin="16 16 12 8"
+      FontSize="16"><Run Text="0"/></TextBlock>
+
+
+
+
+
+
+
+
+                        </StackPanel>
+                    </materialDesign:Card>
+                    <materialDesign:Card
+                    Background="#FF5F3DA4"
+                    Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                    Padding="8" Margin="352,0,640,0">
+                        <StackPanel>
+                            <TextBlock
+                            FontWeight="Bold"
+                            Margin="16 16 12 8"
+                            FontSize="16" Height="23"><Run Text="GIND"/><LineBreak/><Run/></TextBlock>
+                            <TextBlock
+                            Margin="16 16 12 8"
+                            FontSize="16"><Run Text="0"/></TextBlock>
+
+
+
+
+
+
+
+
+                        </StackPanel>
+                    </materialDesign:Card>
+                    <materialDesign:Card
+                    Background="#FF0083F0"
+                    Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                    Padding="8" Margin="694,-2,298,2">
+                        <StackPanel Margin="2,0,-2,0">
+                            <TextBlock
+                            FontWeight="Bold"
+                            Margin="6,16,10,8"
+                            FontSize="16" Text="GTR" Height="23"/>
+                            <TextBlock
+                            Margin="16 16 12 8"
+                            FontSize="16" Height="29"><Run Text="0"/></TextBlock>
+
+
+
+
+
+
+
+
+                        </StackPanel>
+                    </materialDesign:Card>
+                    <materialDesign:Card
+                    Background="#FFFF0046"
+                    Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                    Padding="8" Margin="1028,0,-36,10">
+                        <StackPanel Margin="0,0,-6,-6">
+                            <TextBlock
+                            FontWeight="Bold"
+                            Margin="0,16,-46,8"
+                            FontSize="16" HorizontalAlignment="Right" Width="214" Height="21"><Run Text="GPMC"/><LineBreak/><Run/></TextBlock>
+                            <TextBlock
+                            Margin="16 16 12 8"
+                            FontSize="16" Height="21"><Run Text="0"/></TextBlock>
+
+
+
+
+
+
+
+
+                        </StackPanel>
+                    </materialDesign:Card>
+                </Grid>
+
+
+              
+            </Grid>
+
+        </Border>
+        <Frame x:Name="navigationFrame" Navigated="navigationFrame_Navigated"/>
+    </Grid>
+</Page>

@@ -1,0 +1,142 @@
+﻿<Page x:Class="projet_csharp.Affecter_absence"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:projet_csharp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Affecter_absence">
+    <!--main content-->
+    <Grid Grid.Column="1" Background="#E1E4E6" Grid.RowSpan="2" Margin="24,0,10,0" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="453*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--search-->
+        <Grid    Height="100" Margin="26.887,0,40,0" VerticalAlignment="Top" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  ></ColumnDefinition>
+                <ColumnDefinition  ></ColumnDefinition>
+                <ColumnDefinition  ></ColumnDefinition>
+                <ColumnDefinition Width="200" >
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Border Height="50" Grid.Column="0"   CornerRadius="10"  Margin="153,25,162,25">
+                <Grid VerticalAlignment="Stretch" Margin="0,0,10,0" >
+                    <Label Content="Heure début" Width="100" Margin="-135,2,35,-2"  />
+                    <TextBox Name="debut" Margin="-156,28,52,0"/>
+                </Grid>
+
+
+            </Border>
+            <Border Height="50"   CornerRadius="10"   Margin="162,25,129,25" Grid.Column="1">
+                <Grid VerticalAlignment="Stretch" Margin="0,0,10,0" >
+                    <Label Content="Heure Fin"  Width="100" Margin="-170,2,70,-2"  />
+                    <TextBox Name="fin" Margin="-170,23,70,0"/>
+
+                </Grid>
+
+            </Border>
+            <Border Height="50" Background="WhiteSmoke" CornerRadius="10" Grid.Column="2"  >
+                <Grid VerticalAlignment="Stretch" Margin="0,0,10,0" >
+
+                    <Label Content="Date"  Width="100"/>
+                    <TextBox Name="date" Margin="0,26,0,0" ></TextBox>
+
+                </Grid>
+
+            </Border>
+            <Button Grid.Column="3" Margin="121,25,-7,25" BorderThickness="0"
+                            Background="Teal"   Height="50"
+                            Foreground="White" Click="chercher">
+                <Path Style="{StaticResource {x:Type Path}}" Data="{StaticResource search}" Margin="10,11,10,7" Stretch="Fill" Width="Auto"/>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+        <StackPanel Grid.Row="1" Margin="10,0" Orientation="Vertical" Grid.ColumnSpan="2">
+            <TextBlock FontSize="15" Text="Informations sur la seance" Margin="0,0,20,20" Foreground="Gray"></TextBlock>
+            <Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="65" ></ColumnDefinition>
+                        <ColumnDefinition Width="47*"  ></ColumnDefinition>
+                        <ColumnDefinition Width="46*"  ></ColumnDefinition>
+                        <ColumnDefinition Width="120"></ColumnDefinition>
+                        <ColumnDefinition Width="46*"></ColumnDefinition>
+                        <ColumnDefinition Width="36*"></ColumnDefinition>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="0*"/>
+
+                    </Grid.ColumnDefinitions>
+
+
+
+                </Grid>
+                <DataGrid Name="g2" >
+                    <DataGrid.Columns>
+
+
+
+
+                    </DataGrid.Columns>
+
+                </DataGrid>
+            </Grid>
+
+        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="10,170,10,93" Orientation="Vertical" Grid.ColumnSpan="2">
+            <TextBlock FontSize="15" Text="Liste des etudiants" Margin="0,30,20,20" Foreground="Gray"></TextBlock>
+            <Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="65" ></ColumnDefinition>
+                        <ColumnDefinition Width="47*"  ></ColumnDefinition>
+                        <ColumnDefinition Width="46*"  ></ColumnDefinition>
+                        <ColumnDefinition Width="120"></ColumnDefinition>
+                        <ColumnDefinition Width="46*"></ColumnDefinition>
+                        <ColumnDefinition Width="36*"></ColumnDefinition>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="0*"/>
+
+                    </Grid.ColumnDefinitions>
+
+
+
+                </Grid>
+                <DataGrid Name="g3" >
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn Header="Marquer l'absence">
+
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Background="Transparent" BorderBrush="Transparent"  
+                                                    Width="50" Foreground="Transparent" Click="Marquer_absence" >
+
+                                        <Image Source="Assets\marquer.png"></Image>
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+
+                </DataGrid>
+            </Grid>
+
+        </StackPanel>
+    </Grid>
+</Page>

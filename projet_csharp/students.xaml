@@ -1,0 +1,294 @@
+﻿<Page x:Class="projet_csharp.students"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:projet_csharp"
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="800"
+      Title="students"  Background="White" Width="1619" Height="993">
+
+    <Page.Resources>
+        <Style x:Key="MenuButtonStyle" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Background" Value="WhiteSmoke"/>
+            <Setter Property="Foreground" Value="Gray"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Margin" Value="20,7,-1,7"/>
+            <Setter Property="Template" >
+                <Setter.Value>
+                    <ControlTemplate  TargetType="{x:Type ToggleButton}">
+                        <Border CornerRadius="15,5,5,15"
+                                 Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="45"/>
+                                    <!--icon-->
+                                    <ColumnDefinition/>
+                                    <!--content-->
+                                </Grid.ColumnDefinitions>
+                                <Path  Fill="{TemplateBinding Foreground}"
+                                        Data="{TemplateBinding Tag}" Style="{StaticResource {x:Type Path}}"/>
+                                <ContentPresenter
+                                                     Grid.Column="1"
+                                        TextBlock.TextAlignment="Left"
+                                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                    Content="{TemplateBinding Content}"/>
+
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Background" Value="Silver"/>
+                                <Setter Property="Foreground" Value="Teal"/>
+                                <Setter Property="FontWeight" Value="SemiBold"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Border Background="WhiteSmoke" CornerRadius="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <!--left panel-->
+                    <ColumnDefinition Width="300"/>
+                    <!--main content-->
+                    <ColumnDefinition />
+
+                </Grid.ColumnDefinitions>
+                <Grid Grid.RowSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="130"/>
+                        <RowDefinition Height="Auto"/>
+
+
+                    </Grid.RowDefinitions>
+                    <!--logo-->
+                    <TextBlock FontSize="25"  HorizontalAlignment="Center" VerticalAlignment="Center" > <Run Text="Gestion" FontFamily="fonts/#Dosis"/>
+            <Run Text="D'absenCe"
+             FontWeight="Bold"  FontFamily="fonts/#Dosis" Foreground="#FF01A3ff"></Run></TextBlock>
+
+                    <ProgressBar
+  IsIndeterminate="True" Margin="-10,127,10,0" Grid.Row="1" Foreground="#FF01A3FF" Background="White" BorderBrush="White" />
+                    <!--profile-->
+                    <StackPanel
+                    Grid.Row="1" Width="200" VerticalAlignment="Center">
+                        <Button x:Name="nom_btn" Content="Hafi Malika" Grid.Row="1" Foreground="Black" Background="White" Initialized="nom_btn_Initialized" >
+                            <Button.Style >
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter  Property="Height" Value="50"/>
+                                    <Setter  Property="Background" Value="LightGray"/>
+                                    <Setter  Property="Foreground" Value="Gray"/>
+                                    <Setter  Property="FontWeight" Value="SemiBold"/>
+                                    <Setter  Property="Template" >
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border CornerRadius="25"
+                                                Background="{TemplateBinding Background}"
+                                                BorderThickness="{TemplateBinding BorderThickness}">
+                                                    <Grid>
+                                                        <Ellipse HorizontalAlignment="left"  Height="45" Width="45"   Stretch="UniformToFill" Stroke="White" StrokeThickness="2" Margin="2,0">
+                                                            <Ellipse.Fill>
+                                                                <ImageBrush ImageSource="Assets/avatar.jpg "/>
+                                                            </Ellipse.Fill>
+                                                        </Ellipse>
+                                                        <ContentPresenter
+                                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                    Content="{TemplateBinding Content}"/>
+                                                    </Grid>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+
+                        </Button>
+                        <Grid Width="110" HorizontalAlignment="Left" Margin="0,10">
+                            <TextBlock   
+                     Text="Déconnexion -->"  FontWeight="Bold" Foreground="#FF01A3FF" VerticalAlignment="Center"><InlineUIContainer>
+                                <Path Data="{StaticResource right}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                            </InlineUIContainer></TextBlock>
+                        </Grid>
+                    </StackPanel>
+                    <ProgressBar
+  IsIndeterminate="True" Margin="0,97,0,0" Foreground="#FF01A3FF" Background="White" BorderBrush="White"/>
+                    <!--menu-->
+                    <StackPanel   Grid.Row="2" Margin="0,10 ">
+
+                        <RadioButton x:Name="acceuil_prof" GroupName="menu"  Style="{StaticResource MenuButtonStyle}"
+                           Background="Transparent" Tag="{StaticResource home}" Content="Accueil" Foreground="Black" Checked="acceuil_prof_Checked" />
+                        <RadioButton x:Name="statistique" GroupName="menu" Background="Transparent" Foreground="Gray" Style="{StaticResource MenuButtonStyle}" 
+                            Tag="{StaticResource statistics}" Content="Statistique" Checked="statistique_Checked"  />
+                        <RadioButton x:Name="gestion_etudiant" GroupName="menu" Background="#FF01A3FF" Foreground="White" Style="{StaticResource MenuButtonStyle}" 
+                            Tag="{StaticResource sharedfolders}" Content="Gestion des étudiants"  />
+                        <RadioButton  x:Name="filiere_btn"   GroupName="menu"  Style="{StaticResource MenuButtonStyle}"
+                       Foreground="#FF808080"   Background="Transparent"  Tag="{StaticResource folder}" Content="filières" Checked="filiere_btn_Checked" />
+                        <RadioButton x:Name="gestion_absence" GroupName="menu"  Style="{StaticResource MenuButtonStyle}" 
+                            Tag="{StaticResource documentfile}" Content="Gestion des absences" Checked="gestion_absence_Checked"/>
+
+
+                    </StackPanel>
+
+                </Grid>
+                <!--main content-->
+                <Grid Grid.Column="1" Margin="10,10,10,0" Grid.RowSpan="2" Background="White">
+
+                    <!--head-->
+                    <materialDesign:ColorZone Content="Gestion D'etudiant" 
+                                          HorizontalContentAlignment="Center"
+                                          Padding="10" 
+                                          FontFamily="Arial"
+                                          HorizontalAlignment="Left" 
+                                          Margin="3,3,0,0"
+                                          VerticalAlignment="Top"
+                                          FontSize="20"
+                                          Height="45"
+                                          Width="1306" Background="#FF01A3FF" Foreground="White" Grid.RowSpan="2"/>
+                    <Grid Grid.Column="0" Background="#E1E4E6" Grid.RowSpan="1" Margin="10,75,10,0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <!--search-->
+                        <Grid    Height="100" Margin="40,0" VerticalAlignment="Top">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition  >
+                                </ColumnDefinition>
+                                <ColumnDefinition Width="200" >
+                                </ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Border Height="50" Background="WhiteSmoke" CornerRadius="10" Grid.ColumnSpan="2" Margin="-25,25,134,25">
+                                <Grid VerticalAlignment="Stretch" Margin="0,0,-15,0" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="47*"/>
+                                        <RowDefinition Height="3*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions >
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition Width="50"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Path Style="{StaticResource {x:Type Path}}" Data="{StaticResource search}" Margin="10,11,10,7" Stretch="Fill" Width="Auto"/>
+                                    <TextBox Foreground="Gray" Name="search"  Grid.ColumnSpan="3" Padding="20,0" TextAlignment="Left"
+                                    FontSize="15"   HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="30,0,10,0" Grid.RowSpan="2" TextChanged="search_TextChanged"></TextBox>
+
+                                </Grid>
+                            </Border>
+                            <Button Grid.Column="1" Margin="81,25,-25,25" BorderThickness="0"
+                            Background="Teal" Content="Ajouter étudiant" Height="50"
+                            Foreground="White" Click="Add_student">
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="30"></Setter>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                        </Grid>
+                        <StackPanel Grid.Row="1" Margin="10,0" Orientation="Vertical">
+                            <TextBlock FontSize="15" Text="Liste des étudiants" Margin="0,0,20,20" Foreground="Gray"></TextBlock>
+                            <Grid>
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+
+                                        <ColumnDefinition Width="50"></ColumnDefinition>
+                                        <ColumnDefinition Width="65" ></ColumnDefinition>
+                                        <ColumnDefinition Width="47*"  ></ColumnDefinition>
+                                        <ColumnDefinition Width="46*"  ></ColumnDefinition>
+                                        <ColumnDefinition Width="120"></ColumnDefinition>
+                                        <ColumnDefinition Width="46*"></ColumnDefinition>
+                                        <ColumnDefinition Width="36*"></ColumnDefinition>
+                                        <ColumnDefinition Width="10*"/>
+                                        <ColumnDefinition Width="0*"/>
+
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel Grid.Column="0" Orientation="Horizontal">
+                                        <TextBlock Text="Nom"></TextBlock>
+                                        <Path Margin="5,0" Data="{StaticResource sortdown}" ></Path>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                        <TextBlock Text="Prénom"></TextBlock>
+                                        <Path Margin="5,0" Data="{StaticResource sortdown}" ></Path>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="2" Orientation="Horizontal">
+                                        <TextBlock Text="CNE"></TextBlock>
+                                        <Path Margin="5,0" Data="{StaticResource sortdown}" ></Path>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="3" Orientation="Horizontal">
+                                        <TextBlock Text="Sexe"></TextBlock>
+                                        <Path Margin="5,0" Data="{StaticResource sortdown}" ></Path>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="4" Orientation="Horizontal">
+                                        <TextBlock Text="Date de Naissance"></TextBlock>
+                                        <Path Margin="5,0" Data="{StaticResource sortdown}" ></Path>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="5" Orientation="Horizontal">
+                                        <TextBlock Text="Email"></TextBlock>
+                                        <Path Margin="5,0" Data="{StaticResource sortdown}" ></Path>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="6" Orientation="Horizontal" Grid.ColumnSpan="2">
+                                        <TextBlock Text="Action"></TextBlock>
+                                        <Path Margin="5,0" Data="{StaticResource sortdown}" ></Path>
+                                    </StackPanel>
+
+                                </Grid>
+                                <DataGrid Name="g1" >
+                                    <DataGrid.Columns>
+
+
+                                        <DataGridTemplateColumn Width="70">
+                                            <DataGridTemplateColumn.CellTemplate>
+
+
+                                                <DataTemplate>
+
+                                                    <Button Background="Transparent" BorderBrush="Transparent" Click="delete_btn_Click"
+                                                    Width="50" Foreground="Transparent" >
+
+                                                        <Image Source="Assets\cancel.png"></Image>
+                                                    </Button>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                        <DataGridTemplateColumn  Width="70" >
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <Button Background="Transparent" BorderBrush="Transparent"  Click="Edit"
+                                                    Width="50" Foreground="Transparent" >
+
+                                                        <Image Source="Assets\update.png"></Image>
+                                                    </Button>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+                                    </DataGrid.Columns>
+
+                                </DataGrid>
+                            </Grid>
+
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+
+
+
+            </Grid>
+        </Border>
+        <Frame x:Name="navigationFrame" Navigated="navigationFrame_Navigated"/>
+
+    </Grid>
+
+</Page>

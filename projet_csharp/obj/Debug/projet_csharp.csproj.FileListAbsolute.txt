@@ -1,0 +1,185 @@
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\bin\Debug\projet_csharp.exe.config
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\bin\Debug\projet_csharp.exe
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\bin\Debug\projet_csharp.pdb
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\App.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\projet_csharp_MarkupCompile.cache
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\projet_csharp_MarkupCompile.lref
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\projet_csharp.g.resources
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\projet_csharp.Properties.Resources.resources
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\projet_csharp.csproj.GenerateResource.cache
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\projet_csharp.csproj.CoreCompileInputs.cache
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\projet_csharp.exe
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\projet_csharp.pdb
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Assets\icons.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\App.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\CControl\CardControl.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\projet_csharp_Content.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\CControl\CardControl.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\projet_csharp.csprojAssemblyReference.cache
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\students.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\students.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Login.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Login.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\bin\Debug\MaterialDesignColors.dll
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\projet_csharp.csproj.CopyComplete
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\bin\Debug\projet_csharp.exe.config
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\bin\Debug\projet_csharp.exe
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\bin\Debug\projet_csharp.pdb
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\bin\Debug\MaterialDesignColors.dll
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\bin\Debug\MaterialDesignColors.pdb
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\Assets\icons.baml
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\CControl\CardControl.g.cs
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\Login.g.cs
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\MainWindow.g.cs
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\students.g.cs
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\App.g.cs
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\projet_csharp_Content.g.cs
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\projet_csharp_MarkupCompile.cache
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\projet_csharp_MarkupCompile.lref
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\App.baml
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\CControl\CardControl.baml
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\Login.baml
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\MainWindow.baml
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\students.baml
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\projet_csharp.g.resources
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\projet_csharp.Properties.Resources.resources
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\projet_csharp.csproj.GenerateResource.cache
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\projet_csharp.csproj.CoreCompileInputs.cache
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\projet_csharp.csproj.CopyComplete
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\projet_csharp.exe
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\projet_csharp.pdb
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\Login_page.g.cs
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\Login_page.baml
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\projet_csharp.csprojAssemblyReference.cache
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\inscription.g.cs
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\inscription.baml
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\startwindows.g.cs
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\startwindows.baml
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\ajouter_user.g.cs
+C:\Users\MON PC\Desktop\projet_csharp\projet_csharp\obj\Debug\ajouter_user.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\bin\Debug\projet_csharp.exe.config
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\bin\Debug\projet_csharp.exe
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\bin\Debug\projet_csharp.pdb
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\bin\Debug\MaterialDesignColors.dll
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\bin\Debug\MaterialDesignColors.pdb
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\projet_csharp.csprojAssemblyReference.cache
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Assets\icons.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\ajouter_user.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\inscription.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Login.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Login_page.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\startwindows.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\students.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\App.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\projet_csharp_Content.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\projet_csharp_MarkupCompile.cache
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\projet_csharp_MarkupCompile.lref
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\App.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\ajouter_user.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\inscription.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Login.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Login_page.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\startwindows.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\students.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\projet_csharp.g.resources
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\projet_csharp.Properties.Resources.resources
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\projet_csharp.csproj.GenerateResource.cache
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\projet_csharp.csproj.CoreCompileInputs.cache
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\projet_csharp.csproj.CopyComplete
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\projet_csharp.exe
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\projet_csharp.pdb
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\acceuil_professeur.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\acceuil_professeur.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\acceuil_etudiant.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\acceuil_etudiant.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\gestion_filiere.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\gestion_filiere.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\gestion_absence.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\statistique.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\gestion_absence.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\statistique.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\gestion_absnc.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\gestion_absnc.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\mes_absence_page.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\mes_absence_page.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\gestion_filifere_etudiant.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\statistique_etudiant.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\gestion_filifere_etudiant.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\statistique_etudiant.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\CControl\Bar.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\CControl\Bar.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Bar.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Bar.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\edit_student.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\edit_student.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Affectation.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Affecter_absence.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Affectation.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Affecter_absence.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Ajouter_module.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Modifier_Module.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\module.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Ajouter_module.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\Modifier_Module.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\module.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\CControl\CardControl.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\CControl\CardControl.baml
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\seance.g.cs
+C:\Users\MON PC\Desktop\gestion_absence\projet_csharp\projet_csharp\obj\Debug\seance.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\acceuil_etudiant.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\acceuil_professeur.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Affectation.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Affecter_absence.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Ajouter_module.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\ajouter_user.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Bar.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\CControl\Bar.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\edit_student.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\gestion_absence.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\gestion_absnc.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\gestion_filiere.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\gestion_filifere_etudiant.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\inscription.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Login_page.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\mes_absence_page.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Modifier_Module.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\module.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\seance.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\startwindows.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\statistique.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\statistique_etudiant.g.cs
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\acceuil_etudiant.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\acceuil_professeur.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Affectation.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Affecter_absence.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Ajouter_module.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\ajouter_user.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Bar.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\CControl\Bar.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\edit_student.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\gestion_absence.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\gestion_absnc.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\gestion_filiere.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\gestion_filifere_etudiant.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\inscription.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Login_page.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\mes_absence_page.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\Modifier_Module.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\module.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\seance.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\startwindows.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\statistique.baml
+C:\Users\Malika\source\repos\projet_csharp\projet_csharp\obj\Debug\statistique_etudiant.baml

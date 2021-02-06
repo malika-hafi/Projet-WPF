@@ -1,0 +1,131 @@
+﻿<UserControl x:Class="projet_csharp.ajouter_user"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:projet_csharp"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="White" Width="569.767" Height="695.747">
+    <Grid>
+        <TextBlock
+            VerticalAlignment="Center"
+            Margin="67,0,251,658"
+            FontSize="30"><Run Text="Ajouter" FontWeight="Bold" FontFamily="fonts/#Dosis"/><Run Text=" "/><Run Text="Etudiant" FontWeight="Bold" FontFamily="fonts/#Dosis" Foreground="#FF01A3FF" Background="#FFE4E4E4"
+            /></TextBlock>
+        <!--icone-->
+        <Grid>
+            <materialDesign:PackIcon Kind="AccountMultiplePlus" HorizontalAlignment="Left" Margin="14,-2,0,0" VerticalAlignment="Top" Height="48" Width="44" Foreground="#FF01A3FF"/>
+            <Grid Margin="10,49,10,642" Background="#FF01A3FF">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="343*"/>
+                    <ColumnDefinition Width="208*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+        </Grid>
+        <Label Content="Nom:" HorizontalAlignment="Left" Margin="14,105,0,0" VerticalAlignment="Top" Height="29" Width="56" FontSize="15" Foreground="Black" FontWeight="ExtraBold"/>
+        <!--nom-->
+        <Grid Margin="14,139,39,508">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="31*"/>
+                <ColumnDefinition Width="94*"/>
+                <ColumnDefinition Width="77*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.ColumnSpan="3" Margin="2,-14,0,0">
+                <TextBox x:Name="nom"  
+  materialDesign:HintAssist.Hint="tapez le nom d'etudiant" FontSize="15" Foreground="Gray"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Height="52" />
+            </StackPanel>
+        </Grid>
+
+        <!--prenom-->
+        <Label Content="Prenom:" HorizontalAlignment="Left" Margin="14,188,0,0" VerticalAlignment="Top" Height="29" Width="94" FontSize="15" Foreground="Black" FontWeight="ExtraBold"/>
+        <Grid Margin="14,222,39,425">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="31*"/>
+                <ColumnDefinition Width="94*"/>
+                <ColumnDefinition Width="77*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.ColumnSpan="3" Margin="2,-14,0,0">
+                <TextBox x:Name="prenom"
+  materialDesign:HintAssist.Hint="tapez le prenom d'etudiant" FontSize="15"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Height="52" Foreground="Gray" />
+            </StackPanel>
+        </Grid>
+        <!--cne-->
+        <Label Content="CNE:" HorizontalAlignment="Left" Margin="14,276,0,0" VerticalAlignment="Top" Height="29" Width="94" FontSize="15" Foreground="Black" FontWeight="ExtraBold"/>
+        <Grid Margin="14,310,39,337">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="31*"/>
+                <ColumnDefinition Width="94*"/>
+                <ColumnDefinition Width="77*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.ColumnSpan="3" Margin="2,-14,0,0">
+                <TextBox x:Name="CNE"
+  materialDesign:HintAssist.Hint="tapez le CNE d'etudiant" FontSize="15"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Height="52" Foreground="Gray" />
+            </StackPanel>
+        </Grid>
+
+        <!--sexe-->
+        <Label Content="Sexe:" HorizontalAlignment="Left" Margin="14,376,0,0" VerticalAlignment="Top" Height="30" Width="94" FontSize="15" Foreground="Black" FontWeight="ExtraBold"/>
+        <Grid Margin="14,425,39,242">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="31*"/>
+                <ColumnDefinition Width="94*"/>
+                <ColumnDefinition Width="77*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.ColumnSpan="3" Margin="2,-14,0,0">
+                <ComboBox
+  materialDesign:HintAssist.Hint="choisissez le sexe d'etudiant">
+                    <ComboBoxItem>
+                        male
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        female
+                    </ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+        </Grid>
+        <!--date naissance-->
+        <Label Content="date de naissance:" HorizontalAlignment="Left" Margin="14,467,0,0" VerticalAlignment="Top" Height="30" Width="170" FontSize="15" Foreground="Black" FontWeight="ExtraBold"/>
+        <Grid Margin="14,512,447,135">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="31*"/>
+                <ColumnDefinition Width="94*"/>
+                <ColumnDefinition Width="77*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.ColumnSpan="3" Margin="2,-14,0,0">
+                <DatePicker
+  materialDesign:HintAssist.Hint=" choisissez la date de n'aissance d'etudiant"
+  Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="4,0,-162,0" />
+            </StackPanel>
+        </Grid>
+        <!--boutton-->
+        <Grid
+  Width="124" Margin="126,573,320,72">
+            <Button x:Name="btn_ajouter_user"
+    Style="{StaticResource MaterialDesignRaisedButton}"
+    materialDesign:ButtonProgressAssist.Value="-1"
+    materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+    materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+    Content="Ajouter"
+    Margin="2,0" Background="#FF01A3FF" BorderBrush="#FF01A3FF" OpacityMask="#FF01A3FF" Click="btn_ajouter_user_Click" />
+        </Grid>
+        <!--boutton anuller-->
+        <Grid
+  Width="124" Margin="288,573,158,72">
+            <Button
+    Style="{StaticResource MaterialDesignRaisedButton}"
+    materialDesign:ButtonProgressAssist.Value="-1"
+    materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+    materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+    Content="Annuler"
+    Margin="2,0" Background="#FF01A3FF" BorderBrush="#FF01A3FF" OpacityMask="#FF01A3FF" />
+        </Grid>
+
+    </Grid>
+</UserControl>
